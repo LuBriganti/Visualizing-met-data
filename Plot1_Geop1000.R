@@ -65,7 +65,11 @@ my_fill1 <- scale_fill_gradientn(name = expression("espesor"),
                                                                                       5900,100), limits = c(4700, 5900))
 titulos_grafico<-c("espesor 1000 hPa - 00Z.06nov.2006","espesor 1000 hPa - 12Z.06nov.2006","espesor 1000 hPa 00Z.07nov.2006","espesor 1000 hPa 12Z.07nov.2006")
 
-
+#---
+#title: '"Geopotencial 1000 y espesor 1000/500 (b.i)"'
+#author: "Lucia Briganti"
+#date: "March 8, 2019"
+#---
 
 # Plotting
 
