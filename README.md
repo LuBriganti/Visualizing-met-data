@@ -4,7 +4,7 @@ Here some scripts for plotting met data in R (these are made from binary files, 
 - Geopotential 
 - Wind speed
 - Omega (vertical speed)
-- Wind Roses
+- (Beautiful) Wind Roses
 - more!
 
 
