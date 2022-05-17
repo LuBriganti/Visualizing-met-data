@@ -1,5 +1,5 @@
 # Visualizing-met-data
-Here some scripts for plotting met data in R: 
+Here some scripts for plotting met data in R (these are made from binary files, but works OK for netCDF or HDF5 files too =) ) 
 
 - Geopotential 
 - Wind speed
