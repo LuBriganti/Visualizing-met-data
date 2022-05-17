@@ -1,0 +1,205 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Untitled},
+  pdfauthor={Lucia Briganti},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage[margin=1in]{geometry}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifluatex
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+
+\title{Untitled}
+\author{Lucia Briganti}
+\date{11/7/2021}
+
+\begin{document}
+\maketitle
+
+\hypertarget{visualize-meteorological-data}{%
+\subsection{Visualize meteorological
+data!}\label{visualize-meteorological-data}}
+
+Easy codee for the visualization of wind variable and analyzing any
+anomalies.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# upload libraries and dataset}
+
+\FunctionTok{library}\NormalTok{(openair)}
+\FunctionTok{library}\NormalTok{(readxl)}
+\end{Highlighting}
+\end{Shaded}
+
+First I Pick up the data (this file was provided by the National Weather
+Service and contains information about meteorological variables from an
+airport station).
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{myData }\OtherTok{\textless{}{-}} \FunctionTok{read\_excel}\NormalTok{(}\StringTok{"C:/Users/Lucia/Desktop/TESIS/Datos/data meteo/dataint\_meteo\_2010\_2020.xlsx"}\NormalTok{)}
+\NormalTok{myData }\OtherTok{\textless{}{-}} \FunctionTok{na.omit}\NormalTok{(myData)}
+\FunctionTok{head}\NormalTok{(myData)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 6 x 9
+##    year month   day  hour    AT    RH    SC    WD    WS
+##   <dbl> <dbl> <dbl> <dbl> <dbl> <dbl> <dbl> <dbl> <dbl>
+## 1  2010     5     1     0  18    70.6     2   320  6.17
+## 2  2010     5     1     1  18.3  64.4     4   320  4.63
+## 3  2010     5     1     2  18.2  65.2     4   320  5.14
+## 4  2010     5     1     3  18    66.1     0   320  5.66
+## 5  2010     5     1     4  17    62.7     0   320  5.66
+## 6  2010     5     1     5  17    60.7     0   320  5.66
+\end{verbatim}
+
+I have hourly data, so I will add a date column and round WS (wind
+speed) digits, this will be useful for the wind rose.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{myData}\SpecialCharTok{$}\NormalTok{date }\OtherTok{\textless{}{-}} \FunctionTok{as.Date}\NormalTok{(}\FunctionTok{with}\NormalTok{(myData, }\FunctionTok{paste}\NormalTok{(year, month, day,}\AttributeTok{sep=}\StringTok{"{-}"}\NormalTok{)), }\StringTok{"\%Y{-}\%m{-}\%d"}\NormalTok{)}
+\NormalTok{myData}\SpecialCharTok{$}\NormalTok{WS }\OtherTok{\textless{}{-}} \FunctionTok{round}\NormalTok{(myData}\SpecialCharTok{$}\NormalTok{WS, }\AttributeTok{digits =} \DecValTok{2}\NormalTok{)}
+\FunctionTok{head}\NormalTok{(myData)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 6 x 10
+##    year month   day  hour    AT    RH    SC    WD    WS date      
+##   <dbl> <dbl> <dbl> <dbl> <dbl> <dbl> <dbl> <dbl> <dbl> <date>    
+## 1  2010     5     1     0  18    70.6     2   320  6.17 2010-05-01
+## 2  2010     5     1     1  18.3  64.4     4   320  4.63 2010-05-01
+## 3  2010     5     1     2  18.2  65.2     4   320  5.14 2010-05-01
+## 4  2010     5     1     3  18    66.1     0   320  5.66 2010-05-01
+## 5  2010     5     1     4  17    62.7     0   320  5.66 2010-05-01
+## 6  2010     5     1     5  17    60.7     0   320  5.66 2010-05-01
+\end{verbatim}
+
+I want to visualize the historical wind pattern during winter in the
+city of Buenos Aires and compare it with the 2020 winter wind pattern,
+so for that I am plotting a wind rose for the last ten years (2010-2019)
+and another one for 2020. So I just subset up WS (wind speed) and WD
+(wind direction) from the dataframe. windRose() is a function of the
+openair package, very easy to use and aesthetic too.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{plot}\NormalTok{(WR\_2020)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{C:/Users/Lucia/Desktop/GITHUB/Visualizing-met-data/docs/index_files/figure-latex/unnamed-chunk-5-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{plot}\NormalTok{(WR\_climatica)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{C:/Users/Lucia/Desktop/GITHUB/Visualizing-met-data/docs/index_files/figure-latex/unnamed-chunk-5-2.pdf}
+
+This is a qualitative analyse very useful when you are looking for wind
+anomalies in the wind and wanna do it quickly, it worked for me in my
+thesis and when analyzing a particular event. I truly recommend it:
+checking the event with the climatology is always a good idea. Hope it
+was useful =)
+
+\end{document}
